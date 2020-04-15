@@ -12,12 +12,10 @@ int motorPin4 = 7;
 // Create a servo object 
 Servo Servo;
 
-void setup() {
-  // Declare the Servo pin 
+void setup()
+{ 
   pinMode(ledPin1, OUTPUT);
-  pinMode(ledPin2, OUTPUT);
-
- 
+  pinMode(ledPin2, OUTPUT); 
 }
 void loop()
 { 
@@ -43,28 +41,28 @@ void loop()
    digitalWrite(motorPin2, LOW);
     
    digitalWrite(ledPin2, HIGH);             //Turn the LED-2 on to indicate the completion of winding(HIGH is the voltage level)
-   delay(2000);                            //Wait for 2 second
-   digitalWrite(ledPin2, LOW);             //Turn the LED-2 off by making the voltage LOW   
+   delay(2000);                             //Wait for 2 second
+   digitalWrite(ledPin2, LOW);              //Turn the LED-2 off by making the voltage LOW   
    
-   digitalWrite(motorPin3, LOW);           //Running the DC motor-2 which is in rack and pinion method to position the blade to cut the thread
+   digitalWrite(motorPin3, LOW);            //Running the DC motor-2 which is in rack and pinion method to position the blade to cut the thread
    digitalWrite(motorPin4, HIGH);
-   delay(4*1000);                          //Wait 4 seconds for positioning
+   delay(4*1000);                           //Wait 4 seconds for positioning
    
-   digitalWrite(motorPin3, LOW);           //Stop the DC motor-2 in position 
+   digitalWrite(motorPin3, LOW);            //Stop the DC motor-2 in position 
    digitalWrite(motorPin4, LOW);
    
-   digitalWrite(motorPin1, HIGH);         //DC motor-1 is made to run clockwise for 1 second which cuts the thread
+   digitalWrite(motorPin1, HIGH);           //DC motor-1 is made to run clockwise for 1 second which cuts the thread
    digitalWrite(motorPin2, LOW);  
    delay(1000);
    
-   digitalWrite(motorPin1, LOW);          //DC motor-1 is stopped 
+   digitalWrite(motorPin1, LOW);            //DC motor-1 is stopped 
    digitalWrite(motorPin2, LOW); 
   
-   digitalWrite(motorPin3, HIGH);         //Dc motor-2 runs in anticlockwise so that the blade gains its original position
+   digitalWrite(motorPin3, HIGH);           //Dc motor-2 runs in anticlockwise so that the blade gains its original position
    digitalWrite(motorPin4, LOW);
-   delay(4*1000);                         //Wait 4 seconds for positioning
+   delay(4*1000);                           //Wait 4 seconds for positioning
    
-   digitalWrite(motorPin3, LOW);          //Stop the DC motor-2 
+   digitalWrite(motorPin3, LOW);            //Stop the DC motor-2 
    digitalWrite(motorPin4, LOW);          
    delay(1000*60);
 }
