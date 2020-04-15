@@ -1,14 +1,17 @@
 #include <Servo.h> 
-int i; int n=15;
-int ledPin1 = 8;
-int ledPin2 = 9;
-int servoPin = 5;
+int i; 
+int n=15;
 
-int motorPin1 = 3;
-int motorPin2 = 4 ;
+int ledPin1 = 8;                             //LED-1 to indicate start
+int ledPin2 = 9;                             //LED-2 to indicate completion of winding
 
-int motorPin3 = 6;
-int motorPin4 = 7;
+int servoPin = 5;                            //Pin for servo motor
+
+int motorPin1 = 3;                           //Pin for DC motor-1
+int motorPin2 = 4;                           //Pin for DC motor-1
+
+int motorPin3 = 6;                           //Pin for DC motor-2
+int motorPin4 = 7;                           //Pin for DC motor-2
  
 Servo Servo;                                 // Create a servo object
 
