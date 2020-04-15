@@ -9,8 +9,8 @@ int motorPin2 = 4 ;
 
 int motorPin3 = 6;
 int motorPin4 = 7;
-// Create a servo object 
-Servo Servo;
+ 
+Servo Servo;                                 // Create a servo object
 
 void setup()
 { 
