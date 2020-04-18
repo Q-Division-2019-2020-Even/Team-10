@@ -40,7 +40,7 @@ void loop()
    }
    Servo.detach();                          //Stop servo motor which stops linear motion
    
-   digitalWrite(motorPin1, LOW);            //Stop dc motor-1 which stops winding
+   digitalWrite(motorPin1, LOW);            //Stop DC motor-1 which stops winding
    digitalWrite(motorPin2, LOW);
     
    digitalWrite(ledPin2, HIGH);             //Turn the LED-2 on to indicate the completion of winding(HIGH is the voltage level)
