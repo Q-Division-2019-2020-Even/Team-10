@@ -96,7 +96,7 @@ void loop()
   }
   else
   {
-    Serial.println("Invalid input");
+    Serial.println("INVALID INPUT");
   }
   }
   else if(response == 0)           //Power OFF
