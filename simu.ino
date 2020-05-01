@@ -41,7 +41,7 @@ void loop()
   if(n>0)
   {
    digitalWrite(ledPin1, HIGH);    //Turn the LED-1 on to indicate the start of the process(HIGH is the voltage level)
-   delay(500);                     //Wait for 2 second
+   delay(2000);                     //Wait for 2 second
    digitalWrite(ledPin1, LOW);     //Turn the LED-1 off by making the voltage LOW
    delay(500);
    
